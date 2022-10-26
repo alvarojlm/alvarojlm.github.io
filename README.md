@@ -1,3 +1,4 @@
+<kbd>{c:yellow}
 # Processamento Digital de Imagens.
 
 > Essa página se destina a exibição de atividades propostas na disciplina de Processamento Digital de Imagens. 
@@ -62,3 +63,5 @@ A imagem é dividida de acordo com seu tamanho de forma a gerar 4 novas imagens 
 A última concatenção é feita com um parametro a mais que indica que deverá ser feita formando um segundo eixo. O resultado é o seguinte:
 
 ![Imagem Trocada](img/print/imagem_trocada.png)
+
+{/c}</kbd>
