@@ -4,5 +4,3 @@
 A linguagem escolhida para implemnetação foi **Python**. 
 Os códigos foram feitos na plataforma do **Google Colaboratory**, conhecido como **Colab**, portanto, algumas funcionalidade foram feitas de modo exclusivo para essa ferramenta. 
 Por exemplo, como a plataforma não permite o uso do função _imshow_, utilizada para exibição da imagem pelo OpenCV, em alguns casos foi utilizado uma importação do propio Colab que permite a execução, de forma semelhante, pelo codigo *cv2_imshow*.
-
-## Manipulando pixels em uma imagem.
