@@ -1,4 +1,4 @@
 # Processamento Digital de Imagens
-Página criada para exibição de atividades feitas na disciplina de Processamento Digtal de Imagens. Para as atividades propostas a linguagem escolhida para implementaç
+Página criada para exibição de atividades feitas na disciplina de Processamento Digtal de Imagens. Para as atividades propostas a linguagem escolhida para implementação foi Python.
 
-## 2. Manipulando pixels em uma imagem 
+## Manipulando pixels em uma imagem 
