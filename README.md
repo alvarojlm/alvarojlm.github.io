@@ -6,7 +6,7 @@ A linguagem escolhida para implemnetação foi **Python**.
 Os códigos foram feitos na plataforma do **Google Colaboratory**, conhecido como **Colab**, portanto, algumas funcionalidade foram feitas de modo exclusivo para essa ferramenta. 
 Por exemplo, como a plataforma não permite o uso do função _imshow_, utilizada para exibição da imagem pelo OpenCV, em alguns casos foi utilizado uma importação do propio Colab que permite a execução, de forma semelhante, pelo codigo *cv2_imshow*. Assumindo que as importações necessarias foram feitas, iremos diretamente as implementações.
 
-## <mark>1. Manipulando Pixels</mark>
+## <u>1. Manipulando Pixels</u>
 1. A primeira atividade desta etapa se dá da seguinte forma: Será feito um tratamento de erro para o carregamento da imagem, verificando se o arquivo foi aberto corretamente, após isso a imagem é convertida em escala de cinza e, através da função _shape_ da numpy array, como é lido em Python, são lidos os atributos da imagem, sua altura e largura em pixels  estes serão usados para avisar ao usuario os limetes que podem ser digitados.
 
 ```
@@ -65,7 +65,7 @@ A última concatenção é feita com um parametro a mais que indica que deverá 
 
 ![Imagem Trocada](img/print/imagem_trocada.png)
 
-## 2. Preenchendo regiões
+## <u>2. Preenchendo regiões</u>
 > Nesta parte é considerado que o código disponibilizado em C++ foi corretamente adaptado para Python e partiremos das atividades.
 ___
 1. De modo semelhante, a segunda secção também há duas questões, sendo a primeira a questão da limitação do código ao valor de 255 para realizar o "degradê" na imagem. Buscando uma solução para esse limite a proposta é a seguinte: 
@@ -103,7 +103,7 @@ Há 21 de objetos, dos quais, 7 tem bolhas e 14 estão sem bolhas. |
 ------
 
 
-## 3. Manipulação de histograma
+## <u>3. Manipulação de histograma</u>
 > Não foi possível fazer uso da web cam para captura da imagem, de modo que foi usado uma imagem estatica.
 ___
 1. O histograma foi gerado a partir da imagem em gray scale, de modo que não foi necessario o uso de mais de um canal, mas caso houvesse a necessidade o procedimento teria pouca alteração, sendo repetido para cada canal. O procedimento de criar os histogramas do sistema RGB foi realizado, mas por questões de praticidade foi realizado com o gerado pela imagem em tons de cinza.
@@ -129,5 +129,13 @@ Para o nosso caso foi usado a imagem Portadora.png do banco de imagens.
 A comparação dos histogramas é feita a partir da função do OpenCV `compareHist` em que é posto os histogramas que serão comparados e o metódo que será utilizado e o retorno é o valor dessa comparação.
 O limiar escolhido foi 0.3 e, através de um **if** comparamos o valor que, para este caso, não ultrapassou o limiar.
 
-## 4. Filtragem no domínio espacial I
+## <u>4. Filtragem no domínio espacial I</u>
 
+- A solicitação para esta etapa é simples, dado que o código está pronto, juntamento com os seus filtros, quando o código foi passado para Python cada filtro foi implementado como uma função.
+Ao passar a imagem pelo filtro Laplaciano obtemos o seguinte: 
+
+![Imagem do filtro Laplaciano](img/print/laplac.png)
+
+Quando a imagem passa pelo filtro de Gaus **antes** e então passa pelo Laplaciano, o resultado obtido tem menor contraste, assim como menor ruído, ou seja, a imagem parece captar as linhas e contornos de forma mais limpa, permitindo vizualiza-los melhor.
+
+![Imagem do filtro Gaus e Laplaciano](img/print/gaus_laplaciano.png)
