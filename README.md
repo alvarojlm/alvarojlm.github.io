@@ -6,7 +6,10 @@ A linguagem escolhida para implemnetação foi **Python**.
 Os códigos foram feitos na plataforma do **Google Colaboratory**, conhecido como **Colab**, portanto, algumas funcionalidade foram feitas de modo exclusivo para essa ferramenta. 
 Por exemplo, como a plataforma não permite o uso do função _imshow_, utilizada para exibição da imagem pelo OpenCV, em alguns casos foi utilizado uma importação do propio Colab que permite a execução, de forma semelhante, pelo codigo *cv2_imshow*. Assumindo que as importações necessarias foram feitas, iremos diretamente as implementações.
 
-## <u>1. Manipulando Pixels</u>
+## <u>{c:orange} 1. Manipulando Pixels {/c}</u>
+{c:orange} 1. Manipulando Pixels {/c}  
+
+Este é um {c:#B81365}texto colorido com hexadecimal{/c} 
 1. A primeira atividade desta etapa se dá da seguinte forma: Será feito um tratamento de erro para o carregamento da imagem, verificando se o arquivo foi aberto corretamente, após isso a imagem é convertida em escala de cinza e, através da função _shape_ da numpy array, como é lido em Python, são lidos os atributos da imagem, sua altura e largura em pixels  estes serão usados para avisar ao usuario os limetes que podem ser digitados.
 
 ```
