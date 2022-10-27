@@ -110,7 +110,9 @@ Há 21 de objetos, dos quais, 7 tem bolhas e 14 estão sem bolhas. |
 
 
 ## <u><span style="color:orange; font-size:45"> 3. Manipulação de histograma</span></u>
-> Não foi possível fazer uso da web cam para captura da imagem, de modo que foi usado uma imagem estatica.
+> Não foi possível fazer uso da web cam para captura da imagem, de modo que foi usado uma imagem estatica.  
+
+
 ___
 1. O histograma foi gerado a partir da imagem em gray scale, de modo que não foi necessario o uso de mais de um canal, mas caso houvesse a necessidade o procedimento teria pouca alteração, sendo repetido para cada canal. O procedimento de criar os histogramas do sistema RGB foi realizado, mas por questões de praticidade foi realizado com o gerado pela imagem em tons de cinza.
 O histrograma original é:
